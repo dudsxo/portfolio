@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/user.png">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <!--Biblioteca de ícones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfólio Maria Eduarda</title>
+</head>
+<body>
+    <!--Menu de navegação-->
+    <header>
+        <nav id="nav-bar">
+            <ul class="nav_list">
+                <li class="nav_item active">
+                    <a href="#home">Sobre Mim</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#education">Formação</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <!--Botão para abrir menu mobile-->
+        <button id="mobile-button">
+            <i id="mobile-btn-icon" class="fa-solid fa-bars"></i>
+        </button>
+
+        <!--Menu de navegação mobile-->
+        <div id="mobile-bar">
+            <ul class="mobile_nav_list">
+                <li class="nav_item">
+                    <a href="#home">Sobre Mim</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#education">Educação</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#projects">Projetos</a>
+                </li>
+                <li class="nav_item">
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="content">
+        <!--Seção sobre mim-->
+        <section id="home">
+            <div id="banner">
+                <!--Foto de perfil-->
+                <img src="assets/images/euportifolio.jpg" alt="Foto de Maria Eduarda">
+
+                <p> Olá! Me chamo Maria Eduarda, tenho 20 anos e atualmente curso Engenharia de Software na Uninter.
+
+Minha paixão por leitura começou cedo, ainda na sexta série, quando li A Cabana do William P. Young. Esse hábito me inspirou a manter um journal, onde anoto resenhas, esboço ideias, solto a criatividade e guardo um pouquinho do que vivo e sinto.
+
+Hoje, levo essa mesma criatividade para o mundo da programação, buscando unir minha capacidade de expressão e atenção aos detalhes com o desenvolvimento de soluções inovadoras na área de tecnologia.</p>
+            
+                <!--Links e ícones das redes sociais-->
+                <div class="social_media">
+                    <a href="https://www.linkedin.com/in/maria-eduarda-b706082a0">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/duds_xo/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/dudsxo">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr> <!--Divisor visual entre seções-->
+
+        <!--Seção de formação acadêmica-->
+        <section id="education">
+            <h2 class="section_title">Minha Formação</h2>
+
+            <div class="main_container">
+                <!--Botões da timeline-->
+                <div class="container_botoes">
+                    <button class="btn_year" data-ano="2022">2022</button>
+                    <button class="btn_year" data-ano="2023">2023</button>
+                    <button class="btn_year" data-ano="2024">2024</button>
+                    <button class="btn_year" data-ano="2025">2025</button>
+                </div>
+
+                <div class="container_menu">
+                    <h4 class="section_subtitle">Clique no ano ao lado esquerdo e confira a timeline</h4>
+
+                    <div id="text-2022" class="text_hidden">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h3>Me formei no Ensino Médio</h3>
+                        <p>Em <span class="highlight">2022</span> concluí o Ensino Médio sem saber muito bem que caminho profissional seguir. Foi quando decidi tirar um ano sabático para me conhecer melhor, refletir e amadurecer minhas escolhas.</p>
+                    </div>
+
+                    <div id="text-2023" class="text_hidden">
+                        <i class="fa-solid fa-language"></i>
+                        <h3>Meu ano sabático</h3>
+                        <p>Em <span class="highlight">2023</span> mergulhei no aprendizado de idiomas, especialmente o inglês. Usei séries, filmes e cursos online como ferramentas para praticar e me conectar com outras culturas.</p>
+                    </div>
+
+                    <div id="text-2024" class="text_hidden">
+                        <i class="fa-solid fa-computer"></i>
+                        <h3>Curso Técnico em Informática</h3>
+                        <p>Em <span class="highlight">2024</span> entrei no curso técnico em Informática para me aprofundar em programação e ganhar base sólida na área.</p>
+                    </div>
+
+                    <div id="text-2025" class="text_hidden">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Bacharel em Engenharia de Software</h3>
+                        <p>Em <span class="highlight">2025</span> ingressei no Bacharelado em Engenharia de Software na Uninter, escolhi o curso por alinhar perfeitamente com meus interesses e objetivos na área de tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <!--Seção de projetos-->
+        <section id="projects">
+            <h2 class="section_title">Meus Projetos</h2>
+            <div class="card_container">
+                <!--Cartão do projeto de calculadora-->
+                <div class="card">
+                    <a href="https://github.com/dudsxo/calculadora"><img src="assets/images/calc.png" alt="Projeto Calculadora"></a>
+                    <h3>Calculadora em JS</h3>
+                    <p>Esta calculadora é uma aplicação web desenvolvida com HTML, CSS e JavaScript puro, demonstrando habilidades em manipulação do DOM, tratamento de eventos e lógica de programação.</p>
+                </div>
+            </div>
+
+            <!--Link para portfolio completo no github-->
+            <h4 id="links">Clique na imagem para ver o repositório do projeto ou clique aqui: <a href="https://github.com/dudsxo">Meu Portifólio</a></h4>
+        </section>
+
+        <hr>
+        
+        <!--Seção contato com formulário-->
+        <section id="contact">
+            <h2 class="section_title">Entre em Contato Comigo</h2>
+            <form class="container_contact" action="#" method="post">
+                <div class="form_group">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome">
+                </div>
+
+                <div class="form_group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com">
+                </div>
+
+                <div class="form_group" id="messagem">
+                    <label for="message">Mensagem:</label> 
+                    <textarea name="message" id="message" placeholder="Digite sua mensagem aqui!"></textarea>
+                </div>
+                <button class="btn_contact">Enviar</button>
+            </form>
+        </section>        
+    </main>
+    
+    <!--Rodapé da página-->
+    <footer>
+        <img src="assets/images/wave.svg" alt="Onda decorativa">
+        <div id="footer-items">
+            <span class="copy">
+                &copy; Maria Eduarda
+            </span>
+            <div id="social-media-btn">
+                <a href="https://www.linkedin.com/in/maria-eduarda-b706082a0">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/duds_xo/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                
+                <a href="https://github.com/dudsxo">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Script JS-->
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>

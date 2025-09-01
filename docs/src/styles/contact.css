@@ -1,0 +1,77 @@
+/*Estilização da seção de contato*/
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 25% 5% 25%;
+}
+
+
+/*Container do formulário de contato*/
+.container_contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--color-primary-2);
+    color: var(--color-neutral-0);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.911);
+}
+
+/*Estilização dos campos de texto, email e textarea*/
+input[type="text"],
+input[type="email"], 
+textarea{
+    width: 100%;
+    padding: 5px;
+    display: block;
+    border-radius: 17px;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.911);
+    margin-top: 5px;
+}
+
+textarea{
+    min-height: 150px;
+}
+
+/*Estilização do botão de enviar*/
+.btn_contact{
+    padding: 10px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.911);
+    text-align: center;
+    border-radius: 18px;
+    background-color: var(--color-neutral-1);
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+/*Media query para tablets*/
+@media screen and (max-width: 1170px){
+    #contact{
+        display: flex;
+        width: 100%;
+        padding: 40px;
+    }
+
+    .container_contact{
+        padding: 20px;
+        width: 100%;
+    }
+}
+
+/*Media query para dispositivos móveis*/
+@media screen and (max-width: 630px){
+
+    #contact{
+        padding: 0 15px 10% 15px;
+    }
+    .container_contact{
+        width: 100%;
+    }
+}

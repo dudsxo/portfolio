@@ -1,0 +1,45 @@
+/*Importação de fonte do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Importação de arquivos CSS*/
+@import url(home.css);
+@import url(header.css);
+@import url(education.css);
+@import url(project.css);
+@import url(contact.css);
+@import url(footer.css);
+
+/*Estilo global*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Variáveis de cores*/
+:root {
+    --color-primary-1: #FFF9EA;
+    --color-primary-2: #A40E0E;
+
+    --color-neutral-0: #fff;
+    --color-neutral-1: #000;
+    --color-neutral-2: #333;
+    --color-neutral-3:#444;
+}
+
+/*Estilo geral do corpo*/
+body{
+    background-color: var(--color-primary-1);
+}
+
+/*Estilo geral do h4*/
+h4{
+    color: var(--color-neutral-4);
+    font-weight: normal;
+}
+
+/*Estilo geral para ícones*/
+i{
+    font-size: 22px;
+}

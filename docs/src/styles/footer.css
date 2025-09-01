@@ -1,0 +1,35 @@
+/*Estilização geral do rodapé*/
+footer{
+    background-color: var(--color-primary-2);
+    bottom: 0;
+}
+
+/*Estilização do texto de copyright*/
+.copy{
+    color: var(--color-primary-1);
+    margin-left: 10px;
+}
+
+/*Container principal dos itens do footer*/
+#footer-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Container dos botões de mídia social*/
+#social-media-btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-right: 10px;
+}
+
+/*Estilização dos ícones de redes sociais*/
+#social-media-btn i{
+    color: var(--color-primary-1);
+}
+
+/*Estilização dos links de redes sociais*/
+#social-media-btn a{
+    text-decoration: none;
+}
