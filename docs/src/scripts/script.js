@@ -57,6 +57,7 @@ botoes.forEach(botao => {
         const Idtext = 'text-' + ano
         const text = document.getElementById(Idtext)
         const subtitle = document.querySelector('.section_subtitle')
+        const subtitleMobile = document.querySelector('#mobile-subtitle')
 
         const alltexts = document.querySelectorAll('[id^="text-"]')
         //Para cada texto, esconde:
@@ -67,24 +68,29 @@ botoes.forEach(botao => {
 
         //Exibe o texto correspondente ao ano
         if(ano == "2022"){
+            subtitleMobile.classList.add('text_hidden')
             subtitle.classList.add('text_hidden')
             text.classList.remove('text_hidden')
             text.classList.add('text_visible')
 
         } else if(ano == "2023"){
+            subtitleMobile.classList.add('text_hidden')
             subtitle.classList.add('text_hidden')
             text.classList.remove('text_hidden')
             text.classList.add('text_visible')
         } 
         else if(ano == "2024"){
+            subtitleMobile.classList.add('text_hidden')
             subtitle.classList.add('text_hidden')
             text.classList.remove('text_hidden')
             text.classList.add('text_visible')
         } 
         else if(ano == "2025"){
+            subtitleMobile.classList.add('text_hidden')
             subtitle.classList.add('text_hidden')
             text.classList.remove('text_hidden')
             text.classList.add('text_visible')
         } 
     })
 })
+
