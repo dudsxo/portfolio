@@ -25,6 +25,10 @@
     color: var(--color-neutral-3);
 }
 
+#mobile-subtitle{
+    display: none;
+}
+
 .section_title{
     text-align: center;
     color: var(--color-neutral-1);
@@ -70,7 +74,15 @@
 
     .section_title{
     margin-bottom: 10px;
-}
+    }
+
+    .section_subtitle{
+        display: none;
+    }
+
+    #mobile-subtitle{
+        display: block;
+    }
 
     .container_botoes{
         display: flex;
@@ -97,5 +109,6 @@
     .text_visible {
         max-width: 100%;
     }
+
 
 }
